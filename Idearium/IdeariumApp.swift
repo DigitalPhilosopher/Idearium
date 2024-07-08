@@ -2,17 +2,23 @@
 //  IdeariumApp.swift
 //  Idearium
 //
-//  Created by Patrick Kühn on 03.07.24.
-//
+//  Created by Patrick Kühn on 21.06.24.
 
 import SwiftUI
 import SwiftData
 
 @main
 struct IdeariumApp: App {
+    let persistenceController = PersistenceController.shared
+    
+    init() {
+        // Add initial data here
+        persistenceController.addInitialData()
+    }
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -26,6 +32,7 @@ struct IdeariumApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.context)
         }
         .modelContainer(sharedModelContainer)
     }

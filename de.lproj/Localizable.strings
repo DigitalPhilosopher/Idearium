@@ -1,0 +1,21 @@
+"title" = "Meine Ideen";
+
+"tag.all" = "Alle";
+"tag.personal" = "Persönlich";
+"tag.work" = "Arbeit";
+"tag.housing" = "Wohnen";
+"tag.hobby" = "Hobby";
+
+"button.save" = "Speichern";
+
+"example.1.title" = "KI-gestützter persönlicher Finanzberater";
+"example.1.description" = "Entwickle eine KI-gestützte App für persönliche Finanzberatung, die sich mit den Bankkonten, Investitionsportfolios und Immobilienwerten der Benutzer integriert. Die App verwendet maschinelle Lernalgorithmen, um Ausgabengewohnheiten, Investitionsleistungen und Markttrends zu analysieren und personalisierte Finanzberatung bereitzustellen. Sie umfasst Funktionen wie Budgethilfe, Echtzeit-Investitionsempfehlungen und automatisierte Sparpläne, die alle auf die finanziellen Ziele und Risikotoleranz des Benutzers abgestimmt sind.";
+
+"example.2.title" = "Kontinuierliche Lern- und Persönlichkeitsentwicklungs-Plattform";
+"example.2.description" = "Entwickle eine Plattform für kontinuierliches Lernen und persönliche Entwicklung, die KI-gesteuerte, personalisierte Lernpfade mit Community-Funktionen kombiniert. Die Plattform bietet eine breite Palette von Kursen, Workshops und Ressourcen in verschiedenen Bereichen, einschließlich Technologie, Finanzen und Persönlichkeitsentwicklung. Sie verwendet KI, um Lernmaterialien basierend auf den Interessen und Fortschritten der Benutzer zu empfehlen, und bietet gleichzeitig Tools für Zielsetzung, Fortschrittsverfolgung und Peer-Netzwerke, um das Lernerlebnis zu verbessern.";
+
+"example.3.title" = "Intelligente Immobilienverwaltungsplattform";
+"example.3.description" = "Erstelle eine intelligente Immobilienverwaltungsplattform für Immobilieninvestoren. Diese Plattform nutzt IoT-Geräte, um den Zustand der Immobilien zu überwachen, Wartungsbedarfe zu verfolgen und den Energieverbrauch zu optimieren. Sie umfasst ein Dashboard für die Echtzeitüberwachung, prädiktive Wartungswarnungen und ein Mieterverwaltungssystem mit Funktionen für Mietzahlung, Vertragsmanagement und Kommunikation. Die Plattform zielt darauf ab, den Immobilienwert zu maximieren und die Abläufe für Immobilieninvestoren zu optimieren.";
+
+"example.new.title" = "Meine großartige Idee";
+"example.new.description" = "Dies ist eine Beispielbeschreibung für eine zufällige Idee, die...";

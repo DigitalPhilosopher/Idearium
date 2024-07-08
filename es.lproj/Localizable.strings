@@ -1,0 +1,21 @@
+"title" = "Mis Ideas";
+
+"tag.all" = "Todo";
+"tag.personal" = "Personal";
+"tag.work" = "Trabajo";
+"tag.housing" = "Vivienda";
+"tag.hobby" = "Pasatiempo";
+
+"button.save" = "Guardar";
+
+"example.1.title" = "Asesor Financiero Personal Impulsado por IA";
+"example.1.description" = "Desarrolla una aplicación de asesor financiero personal impulsada por IA que se integra con las cuentas bancarias, carteras de inversión y activos inmobiliarios de los usuarios. La aplicación utiliza algoritmos de aprendizaje automático para analizar los hábitos de gasto, el rendimiento de las inversiones y las tendencias del mercado para proporcionar asesoramiento financiero personalizado. Incluye funciones como asistencia para presupuestos, recomendaciones de inversión en tiempo real y planes de ahorro automatizados, todos adaptados a los objetivos financieros y la tolerancia al riesgo del usuario.";
+
+"example.2.title" = "Centro de Aprendizaje Continuo y Crecimiento Personal";
+"example.2.description" = "Desarrolla un centro de aprendizaje continuo y crecimiento personal que combina rutas de aprendizaje personalizadas impulsadas por IA con funciones comunitarias. La plataforma ofrece una amplia gama de cursos, talleres y recursos en varios campos, incluyendo tecnología, finanzas y desarrollo personal. Utiliza IA para recomendar materiales de aprendizaje basados en los intereses y el progreso del usuario, mientras proporciona herramientas para el establecimiento de objetivos, el seguimiento del progreso y la creación de redes entre pares para mejorar la experiencia de aprendizaje.";
+
+"example.3.title" = "Plataforma de Gestión Inmobiliaria Inteligente";
+"example.3.description" = "Crea una plataforma de gestión inmobiliaria inteligente diseñada para inversores inmobiliarios. Esta plataforma utiliza dispositivos IoT para monitorear las condiciones de la propiedad, rastrear las necesidades de mantenimiento y optimizar el uso de energía. Incluye un tablero de control para la supervisión en tiempo real, alertas de mantenimiento predictivo y un sistema de gestión de inquilinos con funciones para la recaudación de rentas, la gestión de arrendamientos y la comunicación. La plataforma tiene como objetivo maximizar el valor de la propiedad y agilizar las operaciones para los inversores inmobiliarios.";
+
+"example.new.title" = "Mi idea increíble";
+"example.new.description" = "Esta es una descripción de ejemplo para una idea aleatoria que...";

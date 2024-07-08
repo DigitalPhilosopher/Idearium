@@ -2,7 +2,7 @@
 //  Item.swift
 //  Idearium
 //
-//  Created by Patrick Kühn on 03.07.24.
+//  Created by Patrick Kühn on 21.06.24.
 //
 
 import Foundation

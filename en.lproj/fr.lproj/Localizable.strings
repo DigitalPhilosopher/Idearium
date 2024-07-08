@@ -1,0 +1,21 @@
+"title" = "My Ideas";
+
+"tag.all" = "All";
+"tag.personal" = "Personal";
+"tag.work" = "Work";
+"tag.housing" = "Housing";
+"tag.hobby" = "Hobby";
+
+"button.save" = "Save";
+
+"example.1.title" = "AI-Powered Personal Finance Advisor";
+"example.1.description" = "Develop an AI-powered personal finance advisor app that integrates with users' bank accounts, investment portfolios, and real estate assets. The app uses machine learning algorithms to analyze spending habits, investment performance, and market trends to provide personalized financial advice. It includes features like budgeting assistance, real-time investment recommendations, and automated savings plans, all tailored to the user's financial goals and risk tolerance.";
+
+"example.2.title" = "Continous Learning and Personal Growth Hub";
+"example.2.description" = "Develop a continuous learning and personal growth hub that combines AI-driven personalized learning paths with community features. The platform offers a wide range of courses, workshops, and resources across various fields, including technology, finance, and personal development. It uses AI to recommend learning materials based on user interests and progress, while also providing tools for goal setting, progress tracking, and peer networking to enhance the learning experience.";
+
+"example.3.title" = "Smart Real Estate Management Platform";
+"example.3.description" = "Create a smart real estate management platform designed for property investors. This platform utilizes IoT devices to monitor property conditions, track maintenance needs, and optimize energy usage. It includes a dashboard for real-time monitoring, predictive maintenance alerts, and a tenant management system with features for rent collection, lease management, and communication. The platform aims to maximize property value and streamline operations for real estate investors.";
+
+"example.new.title" = "My awesome idea";
+"example.new.description" = "This is an example description for a random idea that...";

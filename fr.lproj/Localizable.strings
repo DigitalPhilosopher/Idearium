@@ -1,0 +1,21 @@
+"title" = "Mes Idées";
+
+"tag.all" = "Tous";
+"tag.personal" = "Personnel";
+"tag.work" = "Travail";
+"tag.housing" = "Logement";
+"tag.hobby" = "Loisir";
+
+"button.save" = "Enregistrer";
+
+"example.1.title" = "Conseiller Financier Personnel Alimenté par IA";
+"example.1.description" = "Développer une application de conseiller financier personnel alimentée par IA qui s'intègre aux comptes bancaires, aux portefeuilles d'investissement et aux actifs immobiliers des utilisateurs. L'application utilise des algorithmes d'apprentissage automatique pour analyser les habitudes de dépenses, les performances des investissements et les tendances du marché afin de fournir des conseils financiers personnalisés. Elle inclut des fonctionnalités telles que l'assistance à la budgétisation, les recommandations d'investissement en temps réel et les plans d'épargne automatisés, tous adaptés aux objectifs financiers et à la tolérance au risque de l'utilisateur.";
+
+"example.2.title" = "Plateforme de Formation Continue et de Développement Personnel";
+"example.2.description" = "Développer une plateforme de formation continue et de développement personnel qui combine des parcours d'apprentissage personnalisés alimentés par IA avec des fonctionnalités communautaires. La plateforme propose une large gamme de cours, d'ateliers et de ressources dans divers domaines, y compris la technologie, la finance et le développement personnel. Elle utilise l'IA pour recommander des supports de formation en fonction des intérêts et des progrès des utilisateurs, tout en fournissant des outils pour la définition d'objectifs, le suivi des progrès et le réseautage entre pairs afin d'améliorer l'expérience d'apprentissage.";
+
+"example.3.title" = "Plateforme de Gestion Immobilière Intelligente";
+"example.3.description" = "Créer une plateforme de gestion immobilière intelligente conçue pour les investisseurs immobiliers. Cette plateforme utilise des dispositifs IoT pour surveiller l'état des propriétés, suivre les besoins de maintenance et optimiser l'utilisation de l'énergie. Elle comprend un tableau de bord pour la surveillance en temps réel, des alertes de maintenance prédictive et un système de gestion des locataires avec des fonctionnalités pour la collecte des loyers, la gestion des baux et la communication. La plateforme vise à maximiser la valeur des propriétés et à rationaliser les opérations pour les investisseurs immobiliers.";
+
+"example.new.title" = "Mon idée géniale";
+"example.new.description" = "Ceci est une description d'exemple pour une idée aléatoire qui...";

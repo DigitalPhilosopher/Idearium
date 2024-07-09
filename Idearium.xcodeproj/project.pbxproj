@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD4C91A12C3BFA0A00D451C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD7D733A2C35BAD500C8ED33 /* Localizable.strings */; };
+		CD2DB6982C3C80A800A969C2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DB6972C3C80A800A969C2 /* ImagePicker.swift */; };
+		CD2DB69A2C3C80B500A969C2 /* NewIdeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DB6992C3C80B500A969C2 /* NewIdeaView.swift */; };
+		CD2DB69E2C3C81B000A969C2 /* IdeaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DB69B2C3C81B000A969C2 /* IdeaCardView.swift */; };
+		CD2DB69F2C3C81B000A969C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DB69C2C3C81B000A969C2 /* ContentView.swift */; };
+		CD2DB6A02C3C81B000A969C2 /* IdeaCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DB69D2C3C81B000A969C2 /* IdeaCategoryView.swift */; };
 		CD7D73072C35B62300C8ED33 /* IdeariumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D73062C35B62300C8ED33 /* IdeariumApp.swift */; };
 		CD7D730B2C35B62300C8ED33 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D730A2C35B62300C8ED33 /* Item.swift */; };
 		CD7D730D2C35B62500C8ED33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7D730C2C35B62500C8ED33 /* Assets.xcassets */; };
 		CD7D73102C35B62500C8ED33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7D730F2C35B62500C8ED33 /* Preview Assets.xcassets */; };
-		CD7D73242C35B7B000C8ED33 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D731C2C35B7B000C8ED33 /* ImagePicker.swift */; };
-		CD7D73252C35B7B000C8ED33 /* NewIdeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D731D2C35B7B000C8ED33 /* NewIdeaView.swift */; };
-		CD7D73262C35B7B000C8ED33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D731F2C35B7B000C8ED33 /* ContentView.swift */; };
-		CD7D73272C35B7B000C8ED33 /* IdeaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D73202C35B7B000C8ED33 /* IdeaCardView.swift */; };
-		CD7D73282C35B7B000C8ED33 /* IdeaCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D73212C35B7B000C8ED33 /* IdeaCategoryView.swift */; };
 		CD7D732D2C35B7ED00C8ED33 /* Ideas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD7D73292C35B7ED00C8ED33 /* Ideas.xcdatamodeld */; };
 		CD7D732E2C35B7ED00C8ED33 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D732A2C35B7ED00C8ED33 /* PersistenceController.swift */; };
 		CD7D73302C35B81800C8ED33 /* Launchscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D732F2C35B81800C8ED33 /* Launchscreen.storyboard */; };
@@ -24,20 +23,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2DB6972C3C80A800A969C2 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = Idearium/Views/IdeaEdit/ImagePicker.swift; sourceTree = SOURCE_ROOT; };
+		CD2DB6992C3C80B500A969C2 /* NewIdeaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewIdeaView.swift; path = Idearium/Views/IdeaEdit/NewIdeaView.swift; sourceTree = SOURCE_ROOT; };
+		CD2DB69B2C3C81B000A969C2 /* IdeaCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaCardView.swift; path = Idearium/Views/Main/IdeaCardView.swift; sourceTree = SOURCE_ROOT; };
+		CD2DB69C2C3C81B000A969C2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Idearium/Views/Main/ContentView.swift; sourceTree = SOURCE_ROOT; };
+		CD2DB69D2C3C81B000A969C2 /* IdeaCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaCategoryView.swift; path = Idearium/Views/Main/IdeaCategoryView.swift; sourceTree = SOURCE_ROOT; };
 		CD7D73032C35B62300C8ED33 /* Idearium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idearium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7D73062C35B62300C8ED33 /* IdeariumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeariumApp.swift; sourceTree = "<group>"; };
 		CD7D730A2C35B62300C8ED33 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CD7D730C2C35B62500C8ED33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7D730F2C35B62500C8ED33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CD7D731C2C35B7B000C8ED33 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		CD7D731D2C35B7B000C8ED33 /* NewIdeaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewIdeaView.swift; sourceTree = "<group>"; };
-		CD7D731F2C35B7B000C8ED33 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CD7D73202C35B7B000C8ED33 /* IdeaCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeaCardView.swift; sourceTree = "<group>"; };
-		CD7D73212C35B7B000C8ED33 /* IdeaCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeaCategoryView.swift; sourceTree = "<group>"; };
 		CD7D732A2C35B7ED00C8ED33 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		CD7D732C2C35B7ED00C8ED33 /* Ideas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ideas.xcdatamodel; sourceTree = "<group>"; };
 		CD7D732F2C35B81800C8ED33 /* Launchscreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launchscreen.storyboard; sourceTree = "<group>"; };
-		CD7D733A2C35BAD500C8ED33 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CD7D73422C35BAE900C8ED33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD7D73432C35BB1300C8ED33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "../zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CD7D73442C35BB1D00C8ED33 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = ../de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 		CD7D73052C35B62300C8ED33 /* Idearium */ = {
 			isa = PBXGroup;
 			children = (
-				CD7D733A2C35BAD500C8ED33 /* Localizable.strings */,
 				CD7D733B2C35BAD500C8ED33 /* Localizable.strings */,
 				CD7D732F2C35B81800C8ED33 /* Launchscreen.storyboard */,
 				CD7D732B2C35B7ED00C8ED33 /* Data */,
@@ -101,8 +98,8 @@
 		CD7D731E2C35B7B000C8ED33 /* IdeaEdit */ = {
 			isa = PBXGroup;
 			children = (
-				CD7D731C2C35B7B000C8ED33 /* ImagePicker.swift */,
-				CD7D731D2C35B7B000C8ED33 /* NewIdeaView.swift */,
+				CD2DB6972C3C80A800A969C2 /* ImagePicker.swift */,
+				CD2DB6992C3C80B500A969C2 /* NewIdeaView.swift */,
 			);
 			path = IdeaEdit;
 			sourceTree = "<group>";
@@ -110,9 +107,9 @@
 		CD7D73222C35B7B000C8ED33 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CD7D731F2C35B7B000C8ED33 /* ContentView.swift */,
-				CD7D73202C35B7B000C8ED33 /* IdeaCardView.swift */,
-				CD7D73212C35B7B000C8ED33 /* IdeaCategoryView.swift */,
+				CD2DB69C2C3C81B000A969C2 /* ContentView.swift */,
+				CD2DB69B2C3C81B000A969C2 /* IdeaCardView.swift */,
+				CD2DB69D2C3C81B000A969C2 /* IdeaCategoryView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -124,8 +121,8 @@
 				CD7D73222C35B7B000C8ED33 /* Main */,
 			);
 			name = Views;
-			path = ../../../Desktop/_BACK/Idearium/Views;
-			sourceTree = "<group>";
+			path = /Users/patrick/Documents/Idearium/Idearium/Views;
+			sourceTree = "<absolute>";
 		};
 		CD7D732B2C35B7ED00C8ED33 /* Data */ = {
 			isa = PBXGroup;
@@ -200,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7D73302C35B81800C8ED33 /* Launchscreen.storyboard in Resources */,
-				CD4C91A12C3BFA0A00D451C3 /* Localizable.strings in Resources */,
 				CD7D733F2C35BAD500C8ED33 /* Localizable.strings in Resources */,
 				CD7D73102C35B62500C8ED33 /* Preview Assets.xcassets in Resources */,
 				CD7D730D2C35B62500C8ED33 /* Assets.xcassets in Resources */,
@@ -215,14 +211,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7D732E2C35B7ED00C8ED33 /* PersistenceController.swift in Sources */,
+				CD2DB69F2C3C81B000A969C2 /* ContentView.swift in Sources */,
 				CD7D732D2C35B7ED00C8ED33 /* Ideas.xcdatamodeld in Sources */,
-				CD7D73272C35B7B000C8ED33 /* IdeaCardView.swift in Sources */,
 				CD7D730B2C35B62300C8ED33 /* Item.swift in Sources */,
-				CD7D73242C35B7B000C8ED33 /* ImagePicker.swift in Sources */,
-				CD7D73262C35B7B000C8ED33 /* ContentView.swift in Sources */,
-				CD7D73282C35B7B000C8ED33 /* IdeaCategoryView.swift in Sources */,
+				CD2DB6A02C3C81B000A969C2 /* IdeaCategoryView.swift in Sources */,
+				CD2DB69A2C3C80B500A969C2 /* NewIdeaView.swift in Sources */,
+				CD2DB6982C3C80A800A969C2 /* ImagePicker.swift in Sources */,
 				CD7D73072C35B62300C8ED33 /* IdeariumApp.swift in Sources */,
-				CD7D73252C35B7B000C8ED33 /* NewIdeaView.swift in Sources */,
+				CD2DB69E2C3C81B000A969C2 /* IdeaCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +379,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launchscreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -420,6 +417,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launchscreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

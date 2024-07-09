@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct NewIdeaView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
@@ -13,6 +12,9 @@ struct NewIdeaView: View {
     
     @State private var selectedImage: UIImage? = nil
     @State private var isImagePickerPresented = false
+    
+    @FocusState private var textIsFocused: Bool
+
     
     init(idea: Idea?) {
         _idea = State(initialValue: idea)
@@ -29,18 +31,20 @@ struct NewIdeaView: View {
     var body: some View {
         NavigationView {
             VStack {
-                VStack(spacing: 16) {
                     TextField("Title", text: $title)
                         .padding()
                         .background(Color(UIColor.systemGray5))
                         .cornerRadius(12)
-                    
+                        .focused($textIsFocused) // Focus state added
+
                     TextEditor(text: $description)
                         .padding()
                         .frame(height: 150)
                         .background(Color(UIColor.systemGray5))
                         .cornerRadius(12)
                         .scrollContentBackground(.hidden)
+                        .keyboardType(.default)
+                        .focused($textIsFocused) // Focus state added
 
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 10) {
@@ -95,36 +99,32 @@ struct NewIdeaView: View {
                             .background(Color.blue)
                             .cornerRadius(12)
                     }
+                    
+                if idea != nil {
+                    Button(action: {
+                        if let idea = idea {
+                            viewContext.delete(idea)
+                            do {
+                                try viewContext.save()
+                                presentationMode.wrappedValue.dismiss()
+                            } catch {
+                                // Handle the error appropriately
+                                print("Failed to delete idea: \(error.localizedDescription)")
+                            }
+                        }
+                    }) {
+                        Text(LocalizedStringKey("button.delete"))
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.red)
+                            .cornerRadius(12)
+                    }
                 }
-                .padding()
-
-                Spacer()
             }
             .background(Color(UIColor.systemGray6))
             .sheet(isPresented: $isImagePickerPresented) {
                 ImagePicker(image: $selectedImage)
-            }
-            .navigationBarItems(trailing: idea != nil ? AnyView(deleteButton) : AnyView(EmptyView()))
-        }
-    }
-
-    private var deleteButton: some View {
-        Button(action: deleteIdea) {
-            Image(systemName: "trash")
-                .foregroundColor(.red)
-        }
-        .disabled(idea == nil)
-    }
-
-    private func deleteIdea() {
-        if let idea = idea {
-            viewContext.delete(idea)
-            do {
-                try viewContext.save()
-                presentationMode.wrappedValue.dismiss()
-            } catch {
-                // Handle the error appropriately
-                print("Failed to delete idea: \(error.localizedDescription)")
             }
         }
     }

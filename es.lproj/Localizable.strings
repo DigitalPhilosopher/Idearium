@@ -19,3 +19,7 @@
 
 "example.new.title" = "Mi idea increíble";
 "example.new.description" = "Esta es una descripción de ejemplo para una idea aleatoria que...";
+
+"delete.confirm" = "Confirmar Eliminación";
+"delete.description" = "¿Estás seguro de que quieres eliminar esta idea?";
+"button.delete" = "Eliminar";

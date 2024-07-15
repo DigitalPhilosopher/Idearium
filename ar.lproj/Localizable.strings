@@ -19,3 +19,7 @@
 
 "example.new.title" = "فكرتي الرائعة";
 "example.new.description" = "هذا مثال لوصف فكرة عشوائية...";
+
+"delete.confirm" = "تأكيد الحذف";
+"delete.description" = "هل أنت متأكد أنك تريد حذف هذه الفكرة؟";
+"button.delete" = "حذف";

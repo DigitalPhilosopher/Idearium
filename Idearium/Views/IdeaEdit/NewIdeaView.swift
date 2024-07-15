@@ -14,6 +14,8 @@ struct NewIdeaView: View {
     @State private var isImagePickerPresented = false
     
     @FocusState private var textIsFocused: Bool
+    @State private var showAlert = false
+
 
     
     init(idea: Idea?) {
@@ -31,100 +33,116 @@ struct NewIdeaView: View {
     var body: some View {
         NavigationView {
             VStack {
-                    TextField("Title", text: $title)
-                        .padding()
-                        .background(Color(UIColor.systemGray5))
-                        .cornerRadius(12)
-                        .focused($textIsFocused) // Focus state added
-
-                    TextEditor(text: $description)
-                        .padding()
-                        .frame(height: 150)
-                        .background(Color(UIColor.systemGray5))
-                        .cornerRadius(12)
-                        .scrollContentBackground(.hidden)
-                        .keyboardType(.default)
-                        .focused($textIsFocused) // Focus state added
-
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 10) {
-                            ForEach(categories, id: \.self) { category in
-                                IdeaCategoryView(title: category, selectedCategory: $selectedCategory)
-                            }
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(categories, id: \.self) { category in
+                            IdeaCategoryView(title: category, selectedCategory: $selectedCategory)
                         }
-                        .padding([.leading, .trailing, .top], 10)
-                    }
-                    
-                    Button(action: {
-                        isImagePickerPresented = true
-                    }) {
-                        if let selectedImage = selectedImage {
-                            Image(uiImage: selectedImage)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(maxHeight: 200)
-                                .cornerRadius(12)
-                                .padding(.bottom)
-                        }
-                    }
-
-                    Button(action: {
-                        if idea == nil {
-                            let newIdea = Idea(context: viewContext)
-                            newIdea.id = UUID()
-                            newIdea.created = Date()
-                            idea = newIdea
-                        }
-                        if let unwrappedIdea = idea {
-                            unwrappedIdea.title = title
-                            unwrappedIdea.short_description = description
-                            unwrappedIdea.category = selectedCategory
-                            if let imageData = selectedImage?.jpegData(compressionQuality: 1.0) {
-                                unwrappedIdea.image = imageData
-                            }
-
-                            do {
-                                try viewContext.save()
-                                presentationMode.wrappedValue.dismiss() // Dismiss the view after saving
-                            } catch {
-                                // Handle the error appropriately
-                                print("Failed to save idea: \(error.localizedDescription)")
-                            }
-                        }
-                    }) {
-                        Text(LocalizedStringKey("button.save"))
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.blue)
-                            .cornerRadius(12)
-                    }
-                    
-                if idea != nil {
-                    Button(action: {
-                        if let idea = idea {
-                            viewContext.delete(idea)
-                            do {
-                                try viewContext.save()
-                                presentationMode.wrappedValue.dismiss()
-                            } catch {
-                                // Handle the error appropriately
-                                print("Failed to delete idea: \(error.localizedDescription)")
-                            }
-                        }
-                    }) {
-                        Text(LocalizedStringKey("button.delete"))
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.red)
-                            .cornerRadius(12)
                     }
                 }
-            }
-            .background(Color(UIColor.systemGray6))
-            .sheet(isPresented: $isImagePickerPresented) {
-                ImagePicker(image: $selectedImage)
+                .padding([.leading, .trailing])
+
+                ScrollView {
+                    VStack {
+                        TextField("Title", text: $title)
+                            .padding()
+                            .background(Color(UIColor.systemGray5))
+                            .cornerRadius(12)
+                            .focused($textIsFocused) // Focus state added
+                        
+                        TextEditor(text: $description)
+                            .padding()
+                            .frame(height: 150)
+                            .background(Color(UIColor.systemGray5))
+                            .cornerRadius(12)
+                            .scrollContentBackground(.hidden)
+                            .keyboardType(.default)
+                            .focused($textIsFocused) // Focus state added
+                        
+                        Button(action: {
+                            isImagePickerPresented = true
+                        }) {
+                            if let selectedImage = selectedImage {
+                                Image(uiImage: selectedImage)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(maxHeight: 200)
+                                    .cornerRadius(12)
+                                    .padding(.bottom)
+                            }
+                        }
+                        
+                        Button(action: {
+                            if idea == nil {
+                                let newIdea = Idea(context: viewContext)
+                                newIdea.id = UUID()
+                                newIdea.created = Date()
+                                idea = newIdea
+                            }
+                            if let unwrappedIdea = idea {
+                                unwrappedIdea.title = title
+                                unwrappedIdea.short_description = description
+                                unwrappedIdea.category = selectedCategory
+                                if let imageData = selectedImage?.jpegData(compressionQuality: 1.0) {
+                                    unwrappedIdea.image = imageData
+                                }
+                                
+                                do {
+                                    try viewContext.save()
+                                    presentationMode.wrappedValue.dismiss() // Dismiss the view after saving
+                                } catch {
+                                    // Handle the error appropriately
+                                    print("Failed to save idea: \(error.localizedDescription)")
+                                }
+                            }
+                        }) {
+                            Text(LocalizedStringKey("button.save"))
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.blue)
+                                .cornerRadius(12)
+                        }
+                        
+                        if idea != nil {
+                            Button(action: {
+                                showAlert = true
+                            }) {
+                                Text(LocalizedStringKey("button.delete"))
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .frame(maxWidth: .infinity)
+                                    .background(Color.red)
+                                    .cornerRadius(12)
+                            }
+                            .alert(isPresented: $showAlert) {
+                                Alert(
+                                    title: Text(LocalizedStringKey("delete.confirm")),
+                                    message: Text(LocalizedStringKey("delete.description")),
+                                    primaryButton: .destructive(Text(LocalizedStringKey("button.delete"))) {
+                                        if let idea = idea {
+                                            viewContext.delete(idea)
+                                            do {
+                                                try viewContext.save()
+                                                presentationMode.wrappedValue.dismiss()
+                                            } catch {
+                                                // Handle the error appropriately
+                                                print("Failed to delete idea: \(error.localizedDescription)")
+                                            }
+                                        }
+                                    },
+                                    secondaryButton: .cancel()
+                                )
+                            }
+                        }
+                    }
+                    .sheet(isPresented: $isImagePickerPresented) {
+                        ImagePicker(image: $selectedImage)
+                    }
+                    .navigationBarHidden(true)
+                }
+                .scrollDismissesKeyboard(.interactively)
+                .padding()
             }
         }
     }

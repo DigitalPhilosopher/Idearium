@@ -19,3 +19,7 @@
 
 "example.new.title" = "मेरे शानदार विचार";
 "example.new.description" = "यह एक यादृच्छिक विचार के लिए एक उदाहरण विवरण है जो...";
+
+"delete.confirm" = "हटाने की पुष्टि करें";
+"delete.description" = "क्या आप वाकई इस विचार को हटाना चाहते हैं?";
+"button.delete" = "हटाएं";

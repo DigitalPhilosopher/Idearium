@@ -16,9 +16,11 @@ struct IdeaCardView: View {
                     Text(title)
                         .font(.system(size: 18, weight: .bold))
                         .foregroundColor(Color.black)
+                        .multilineTextAlignment(.leading)
                     Text(description)
                         .font(.system(size: 14))
                         .foregroundColor(Color.gray)
+                        .multilineTextAlignment(.leading)
                         .lineLimit(3)
                 }
                 .padding()

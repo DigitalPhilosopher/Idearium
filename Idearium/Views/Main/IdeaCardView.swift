@@ -12,14 +12,14 @@ struct IdeaCardView: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(LocalizedStringKey(category))
                         .font(.system(size: 14))
-                        .foregroundColor(Color.gray)
+                        .foregroundColor(Color.textColor)
                     Text(title)
                         .font(.system(size: 18, weight: .bold))
                         .foregroundColor(Color.black)
                         .multilineTextAlignment(.leading)
                     Text(description)
                         .font(.system(size: 14))
-                        .foregroundColor(Color.gray)
+                        .foregroundColor(Color.textColor)
                         .multilineTextAlignment(.leading)
                         .lineLimit(3)
                 }

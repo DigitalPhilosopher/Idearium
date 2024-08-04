@@ -40,7 +40,7 @@ struct ContentView: View {
                             .frame(width: 24, height: 24)
                     }
                     .frame(width: 24, height: 24)
-                    .background(Color.green)
+                    .background(Color.secondaryColor)
                     .cornerRadius(24)
                     
                     NavigationLink(destination: NewIdeaView(idea: nil), isActive: $showNewIdeaView) {

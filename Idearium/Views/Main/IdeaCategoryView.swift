@@ -8,10 +8,10 @@ struct IdeaCategoryView: View {
     var body: some View {
         Text(LocalizedStringKey(title))
             .font(.system(size: 14, weight: .medium))
-            .foregroundColor(.black)
+            .foregroundColor(Color.textColor)
             .padding(.horizontal, 16)
             .padding(.vertical, 8)
-            .background(selectedCategory == title ? Color.blue : Color.gray.opacity(0.2))
+            .background(selectedCategory == title ? Color.primaryColor : Color.backgroundColor)
             .cornerRadius(16)
             .onTapGesture {
                 selectedCategory = title

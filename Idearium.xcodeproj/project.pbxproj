@@ -12,6 +12,7 @@
 		CD2DB69E2C3C81B000A969C2 /* IdeaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DB69B2C3C81B000A969C2 /* IdeaCardView.swift */; };
 		CD2DB69F2C3C81B000A969C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DB69C2C3C81B000A969C2 /* ContentView.swift */; };
 		CD2DB6A02C3C81B000A969C2 /* IdeaCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DB69D2C3C81B000A969C2 /* IdeaCategoryView.swift */; };
+		CD5A061C2C470162002FC236 /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5A061B2C470162002FC236 /* Color+Custom.swift */; };
 		CD7D73072C35B62300C8ED33 /* IdeariumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D73062C35B62300C8ED33 /* IdeariumApp.swift */; };
 		CD7D730B2C35B62300C8ED33 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D730A2C35B62300C8ED33 /* Item.swift */; };
 		CD7D730D2C35B62500C8ED33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7D730C2C35B62500C8ED33 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		CD2DB69B2C3C81B000A969C2 /* IdeaCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaCardView.swift; path = Idearium/Views/Main/IdeaCardView.swift; sourceTree = SOURCE_ROOT; };
 		CD2DB69C2C3C81B000A969C2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Idearium/Views/Main/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		CD2DB69D2C3C81B000A969C2 /* IdeaCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaCategoryView.swift; path = Idearium/Views/Main/IdeaCategoryView.swift; sourceTree = SOURCE_ROOT; };
+		CD5A061B2C470162002FC236 /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 		CD7D73032C35B62300C8ED33 /* Idearium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idearium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7D73062C35B62300C8ED33 /* IdeariumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeariumApp.swift; sourceTree = "<group>"; };
 		CD7D730A2C35B62300C8ED33 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				CD7D730A2C35B62300C8ED33 /* Item.swift */,
 				CD7D730C2C35B62500C8ED33 /* Assets.xcassets */,
 				CD7D730E2C35B62500C8ED33 /* Preview Content */,
+				CD5A061B2C470162002FC236 /* Color+Custom.swift */,
 			);
 			path = Idearium;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5A061C2C470162002FC236 /* Color+Custom.swift in Sources */,
 				CD7D732E2C35B7ED00C8ED33 /* PersistenceController.swift in Sources */,
 				CD2DB69F2C3C81B000A969C2 /* ContentView.swift in Sources */,
 				CD7D732D2C35B7ED00C8ED33 /* Ideas.xcdatamodeld in Sources */,

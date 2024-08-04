@@ -45,15 +45,18 @@ struct NewIdeaView: View {
                 ScrollView {
                     VStack {
                         TextField("Title", text: $title)
+                            .font(.system(size: 18, weight: .bold))
+                            .foregroundColor(Color.black)
                             .padding()
-                            .background(Color(UIColor.systemGray5))
+                            .background(Color.backgroundColor)
                             .cornerRadius(12)
                             .focused($textIsFocused) // Focus state added
                         
                         TextEditor(text: $description)
+                            .foregroundColor(Color.textColor)
                             .padding()
                             .frame(height: 150)
-                            .background(Color(UIColor.systemGray5))
+                            .background(Color.backgroundColor)
                             .cornerRadius(12)
                             .scrollContentBackground(.hidden)
                             .keyboardType(.default)
@@ -97,10 +100,10 @@ struct NewIdeaView: View {
                             }
                         }) {
                             Text(LocalizedStringKey("button.save"))
-                                .foregroundColor(.white)
+                                .foregroundColor(Color.textColor)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .background(Color.blue)
+                                .background(Color.primaryColor)
                                 .cornerRadius(12)
                         }
                         
@@ -109,10 +112,10 @@ struct NewIdeaView: View {
                                 showAlert = true
                             }) {
                                 Text(LocalizedStringKey("button.delete"))
-                                    .foregroundColor(.white)
+                                    .foregroundColor(Color.textColor)
                                     .padding()
                                     .frame(maxWidth: .infinity)
-                                    .background(Color.red)
+                                    .background(Color.accentColor)
                                     .cornerRadius(12)
                             }
                             .alert(isPresented: $showAlert) {

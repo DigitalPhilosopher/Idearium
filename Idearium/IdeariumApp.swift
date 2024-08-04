@@ -11,15 +11,10 @@ import SwiftData
 struct IdeariumApp: App {
     let persistenceController = PersistenceController.shared
     
-    init() {
-        // Add initial data here
-        persistenceController.addInitialData()
-    }
+    init() {}
 
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            
-        ])
+        let schema = Schema([])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {

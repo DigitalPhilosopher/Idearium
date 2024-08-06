@@ -21,6 +21,8 @@
 		CD7D732E2C35B7ED00C8ED33 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D732A2C35B7ED00C8ED33 /* PersistenceController.swift */; };
 		CD7D73302C35B81800C8ED33 /* Launchscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D732F2C35B81800C8ED33 /* Launchscreen.storyboard */; };
 		CD7D733F2C35BAD500C8ED33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD7D733B2C35BAD500C8ED33 /* Localizable.strings */; };
+		CD7EFD2D2C62213800DF1470 /* IdeasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EFD2C2C62213800DF1470 /* IdeasView.swift */; };
+		CD7EFD2F2C6221F300DF1470 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EFD2E2C6221F300DF1470 /* CategoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		CD7D73462C35BB2F00C8ED33 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ../ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD7D73472C35BB3E00C8ED33 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = ../es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD7D73482C35BBAD00C8ED33 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = ../fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD7EFD2C2C62213800DF1470 /* IdeasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasView.swift; sourceTree = "<group>"; };
+		CD7EFD2E2C6221F300DF1470 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				CD2DB69C2C3C81B000A969C2 /* ContentView.swift */,
 				CD2DB69B2C3C81B000A969C2 /* IdeaCardView.swift */,
 				CD2DB69D2C3C81B000A969C2 /* IdeaCategoryView.swift */,
+				CD7EFD2C2C62213800DF1470 /* IdeasView.swift */,
+				CD7EFD2E2C6221F300DF1470 /* CategoriesView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 			files = (
 				CD5A061C2C470162002FC236 /* Color+Custom.swift in Sources */,
 				CD7D732E2C35B7ED00C8ED33 /* PersistenceController.swift in Sources */,
+				CD7EFD2F2C6221F300DF1470 /* CategoriesView.swift in Sources */,
+				CD7EFD2D2C62213800DF1470 /* IdeasView.swift in Sources */,
 				CD2DB69F2C3C81B000A969C2 /* ContentView.swift in Sources */,
 				CD7D732D2C35B7ED00C8ED33 /* Ideas.xcdatamodeld in Sources */,
 				CD7D730B2C35B62300C8ED33 /* Item.swift in Sources */,
